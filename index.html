@@ -8,12 +8,14 @@
   <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
 </head>
 <body>
+  <py-env>
+    - pandas
+  </py-env>
   <py-script>
 
-    i = 10
-
-    for item in range(i):
-        print("Hello, World!")
+    import pandas
+    df = pandas.read_csv('hrdata.csv')
+    print(df)
 
   </py-script>
 
